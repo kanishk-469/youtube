@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/app.css" />
+    <title>YouTube Clone</title>
+  </head>
+  <body>
+    <!-- Semantic Element(define it's content), SEO, screen reader
+    <header>kanishka singh</header>
+    <nav>Example</nav> -->
+    <header class="header">
+      <div class="left-section">
+        <img
+          src="assets/img/header/hamburger-menu.svg"
+          alt="hamburger-menu"
+          class="hamburger-menu"
+        />
+        <img
+          src="assets/img/header/youtube-logo.svg"
+          alt="youtube-logo"
+          class="youtube-logo"
+        />
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <!--inline-block Element-->
+        <button class="search-icon-btn">
+          <img class="search-icon" src="/assets/img/header/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button title="voice-search" class="voice-search-btn">
+          <img
+            src="assets/img/header/voice-search-icon.svg"
+            alt="voice-search"
+            class="voice-search-icon"
+          />
+        </button>
+      </div>
+
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img src="assets/img/header/upload.svg" alt="" class="upload-icon" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="upload-icon-container">
+          <img
+            src="assets/img/header/youtube-apps.svg"
+            alt=""
+            class="youtube-apps-icon"
+          />
+          <div class="tooltip">Youtube app</div>
+        </div>
+        <div class="upload-icon-container">
+          <img
+            src="assets/img/header/notifications.svg"
+            alt=""
+            class="notifications-icon"
+          />
+          <div class="tooltip">Notifications</div>
+        </div>
+        <div class="notification__number">3</div>
+
+        <img
+          title="Profile-picture"
+          src="assets/img/header/channels4_profile.jpeg"
+          alt=""
+          class="current-user-my-channel-picture"
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar__link">
+        <img
+          class="sidebar__icon"
+          src="assets/img/icon/home.svg"
+          alt="home-icon"
+        />
+        <p class="sidebar__text">Home</p>
+      </div>
+      <div class="sidebar__link">
+        <img
+          class="sidebar__icon"
+          src="assets/img/icon/explore.svg"
+          alt="explore-icon"
+        />
+        <p class="sidebar__text">Explore</p>
+      </div>
+      <div class="sidebar__link">
+        <img
+          class="sidebar__icon"
+          src="assets/img/icon/subscriptions.svg"
+          alt="subscriptions-icon"
+        />
+        <p class="sidebar__text">Subscriptions</p>
+      </div>
+      <div class="sidebar__link">
+        <img
+          class="sidebar__icon"
+          src="assets/img/icon/originals.svg"
+          alt="originals-icon"
+        />
+        <p class="sidebar__text">Originals</p>
+      </div>
+      <div class="sidebar__link">
+        <img
+          class="sidebar__icon"
+          src="assets/img/icon/youtube-music.svg"
+          alt="music-icon"
+        />
+        <p class="sidebar__text">YouTube Music</p>
+      </div>
+      <div class="sidebar__link">
+        <img
+          class="sidebar__icon"
+          src="assets/img/icon/library.svg"
+          alt="library-icon"
+        />
+        <p class="sidebar__text">Library</p>
+      </div>
+    </nav>
+    
+    <main>
+    <section class="container-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-1.webp"
+              alt="thumbnail-1"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/mkbhd" target="_blank">
+             <div class="channel-tooltip-container">
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-1.jpeg"
+                alt="channel-image"
+              />
+              <div class="channel-tooltip">
+                <div><img class="channel-img" src="assets/img/channel/channel-1.jpeg" alt="tooltip-channel-image"/></div>
+                <div class="tooltip-channel-info">
+                  <p class="tooltip-channel-name">Marques Brownlee</p>
+                  <p class="tooltip-channel-subs">15M subscribers</p>
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+              target="_blank"
+            >
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">Marques Brownlee</p>
+            </a>
+            <p class="video-stats">3.4M views &#46; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-2.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">10:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/markiplier" target="_blank">
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-2.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+              target="_blank"
+            >
+              <p class="video-title">Try Not To Laugh Challenge #9</p>
+              <p class="video-author">Markiplier</p>
+            </a>
+            <p class="video-stats">19M views&#46; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-3.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">08:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/user/SSSniperWolf" target="_blank">
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-3.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+              target="_blank"
+            >
+              <p class="video-title">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+              <p class="video-author">SSSniperWolf</p>
+            </a>
+            <p class="video-stats">12M views &#46; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=094y1Z2wpJg" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-4.webp"
+              alt="thumbnail-1"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">09:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/veritasium" target="_blank">
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-4.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+              target="_blank"
+            >
+              <p class="video-title">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              </p>
+              <p class="video-author">Veritasium</p>
+            </a>
+            <p class="video-stats">3.4k views &#46; 10 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=86CQq3pKSUw" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-5.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">10:00</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/CSDojo" target="_blank">
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-5.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+              target="_blank"
+            >
+              <p class="video-title">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </p>
+              <p class="video-author">CS Dijo</p>
+            </a>
+            <p class="video-stats">29M views&#46; 6 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-6.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">07:30</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a
+              href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA"
+              target="_blank"
+            >
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-6.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+              target="_blank"
+            >
+              <p class="video-title">
+                Anything You Can Fit In The Circle I&#39;ll Pay For
+              </p>
+              <p class="video-author">MrBeast</p>
+            </a>
+
+            <p class="video-stats">121M views &#46; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=fNVa1qMbF9Y" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-7.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">10:13</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a
+              href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww"
+              target="_blank"
+            >
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-7.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=fNVa1qMbF9Y"
+              target="_blank"
+            >
+              <p class="video-title">Why Planes Don't Fly Over Tibet</p>
+              <p class="video-author">RealLifeLore</p>
+            </a>
+            <p class="video-stats">6.6M views &#46; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=lFm4EM1juls" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-8.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">07:30</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a
+              href="https://www.youtube.com/channel/UCHAK6CyegY22Zj2GWrcaIxg"
+              target="_blank"
+            >
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-8.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=lFm4EM1juls"
+              target="_blank"
+            >
+              <p class="video-title">
+                Inside The World&#39;s Biggest Passenger Plane
+              </p>
+              <p class="video-author">Tech Vision</p>
+            </a>
+            <p class="video-stats">3.9M views &#46; 10 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=ixmxOlcrlUc" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-9.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">13:07</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a
+              href="https://www.youtube.com/c/OFFICIALTHENXSTUDIOS"
+              target="_blank"
+            >
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-9.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=ixmxOlcrlUc"
+              target="_blank"
+            >
+              <p class="video-title">The SECRET to Super Human STRENGTH</p>
+              <p class="video-author">ThenX</p>
+            </a>
+            <p class="video-stats">20M views &#46; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=R2vXbFp5C9o" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-10.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">07:53</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a
+              href="https://www.youtube.com/user/businessinsider"
+              target="_blank"
+            >
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-10.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=R2vXbFp5C9o"
+              target="_blank"
+            >
+              <p class="video-title">
+                How The World&#39;s Largest Cruise Ship Makes 30,000 Meals Every
+                Day
+              </p>
+              <p class="video-author">Business Insider</p>
+            </a>
+            <p class="video-stats">14M views &#46; 1 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=0nZuYyXET3s" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-11.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">04:10</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/c/Destinationtips" target="_blank">
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-11.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=0nZuYyXET3s"
+              target="_blank"
+            >
+              <p class="video-title">
+                Dubai&#39;s Crazy Underwater Train and Other Things #Only in
+                Dubai
+              </p>
+              <p class="video-author">Destination Tips</p>
+            </a>
+            <p class="video-stats">3M views &#46; 12 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <!--using div we can create Vertical and Horizontal layouts-->
+          <a href="https://www.youtube.com/watch?v=9iMGFqMmUFs" target="_blank">
+            <img
+              class="thumbnail-1"
+              src="assets/img/thumbnails/thumbnail-12.webp"
+              alt="thumbnail-2"
+            />
+            <!--inline-block Element-->
+          </a>
+          <div class="video__timestamp">07:30</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com/teded" target="_blank">
+              <img
+                class="channel-img"
+                src="assets/img/channel/channel-12.jpeg"
+                alt="channel-image"
+              />
+            </a>
+          </div>
+          <div class="video-info">
+            <a
+              href="https://www.youtube.com/watch?v=9iMGFqMmUFs"
+              target="_blank"
+            >
+              <p class="video-title">
+                What would happen if you didn&#39;t drink water? - Mia Nacamulli
+              </p>
+              <p class="video-author">TED-Ed</p>
+            </a>
+            <p class="video-stats">17M views &#46; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </body>
+</html>
